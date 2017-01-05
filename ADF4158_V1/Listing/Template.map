@@ -534,35 +534,35 @@ Image Symbol Table
     XPT2046_Calculate_CalibrationFactor      0x0800270b   Thumb Code   370  bsp_xpt2046_lcd.o(.text)
     ILI9341_DrawCross                        0x0800287d   Thumb Code    52  bsp_xpt2046_lcd.o(.text)
     .text                                    0x08002d60   Section        0  bgt24mtr12.o(.text)
-    .text                                    0x08002ef8   Section        0  bsp_adf4158.o(.text)
-    .text                                    0x080030a0   Section        0  memseta.o(.text)
-    .text                                    0x080030c4   Section        0  strlen.o(.text)
-    .text                                    0x080030d2   Section        0  dadd.o(.text)
-    .text                                    0x08003220   Section        0  dmul.o(.text)
-    .text                                    0x08003304   Section        0  ddiv.o(.text)
-    .text                                    0x080033e2   Section        0  dflti.o(.text)
-    .text                                    0x08003404   Section        0  dfltui.o(.text)
-    .text                                    0x0800341e   Section        0  dfixui.o(.text)
-    .text                                    0x08003450   Section       48  cdcmple.o(.text)
-    .text                                    0x08003480   Section        0  uidiv.o(.text)
-    .text                                    0x080034ac   Section        0  llshl.o(.text)
-    .text                                    0x080034ca   Section        0  llushr.o(.text)
-    .text                                    0x080034ea   Section        0  llsshr.o(.text)
-    .text                                    0x0800350e   Section        0  iusefp.o(.text)
-    .text                                    0x0800350e   Section        0  depilogue.o(.text)
-    .text                                    0x080035c8   Section       36  init.o(.text)
-    i.ILI9341_Read_Data                      0x080035ec   Section        0  bsp_ili9341_lcd.o(i.ILI9341_Read_Data)
-    i.ILI9341_Write_Cmd                      0x080035f8   Section        0  bsp_ili9341_lcd.o(i.ILI9341_Write_Cmd)
-    i.ILI9341_Write_Data                     0x08003600   Section        0  bsp_ili9341_lcd.o(i.ILI9341_Write_Data)
-    i.__0sprintf$1                           0x0800360c   Section        0  printf1.o(i.__0sprintf$1)
-    i.__scatterload_copy                     0x08003634   Section       14  handlers.o(i.__scatterload_copy)
-    i.__scatterload_null                     0x08003642   Section        2  handlers.o(i.__scatterload_null)
-    i.__scatterload_zeroinit                 0x08003644   Section       14  handlers.o(i.__scatterload_zeroinit)
-    i._printf_core                           0x08003654   Section        0  printf1.o(i._printf_core)
-    _printf_core                             0x08003655   Thumb Code   336  printf1.o(i._printf_core)
-    i._sputc                                 0x080037a8   Section        0  printf1.o(i._sputc)
-    _sputc                                   0x080037a9   Thumb Code    10  printf1.o(i._sputc)
-    .constdata                               0x080037b2   Section     1520  bsp_ili9341_lcd.o(.constdata)
+    .text                                    0x08002efc   Section        0  bsp_adf4158.o(.text)
+    .text                                    0x080030a4   Section        0  memseta.o(.text)
+    .text                                    0x080030c8   Section        0  strlen.o(.text)
+    .text                                    0x080030d6   Section        0  dadd.o(.text)
+    .text                                    0x08003224   Section        0  dmul.o(.text)
+    .text                                    0x08003308   Section        0  ddiv.o(.text)
+    .text                                    0x080033e6   Section        0  dflti.o(.text)
+    .text                                    0x08003408   Section        0  dfltui.o(.text)
+    .text                                    0x08003422   Section        0  dfixui.o(.text)
+    .text                                    0x08003454   Section       48  cdcmple.o(.text)
+    .text                                    0x08003484   Section        0  uidiv.o(.text)
+    .text                                    0x080034b0   Section        0  llshl.o(.text)
+    .text                                    0x080034ce   Section        0  llushr.o(.text)
+    .text                                    0x080034ee   Section        0  llsshr.o(.text)
+    .text                                    0x08003512   Section        0  iusefp.o(.text)
+    .text                                    0x08003512   Section        0  depilogue.o(.text)
+    .text                                    0x080035cc   Section       36  init.o(.text)
+    i.ILI9341_Read_Data                      0x080035f0   Section        0  bsp_ili9341_lcd.o(i.ILI9341_Read_Data)
+    i.ILI9341_Write_Cmd                      0x080035fc   Section        0  bsp_ili9341_lcd.o(i.ILI9341_Write_Cmd)
+    i.ILI9341_Write_Data                     0x08003604   Section        0  bsp_ili9341_lcd.o(i.ILI9341_Write_Data)
+    i.__0sprintf$1                           0x08003610   Section        0  printf1.o(i.__0sprintf$1)
+    i.__scatterload_copy                     0x08003638   Section       14  handlers.o(i.__scatterload_copy)
+    i.__scatterload_null                     0x08003646   Section        2  handlers.o(i.__scatterload_null)
+    i.__scatterload_zeroinit                 0x08003648   Section       14  handlers.o(i.__scatterload_zeroinit)
+    i._printf_core                           0x08003658   Section        0  printf1.o(i._printf_core)
+    _printf_core                             0x08003659   Thumb Code   336  printf1.o(i._printf_core)
+    i._sputc                                 0x080037ac   Section        0  printf1.o(i._sputc)
+    _sputc                                   0x080037ad   Thumb Code    10  printf1.o(i._sputc)
+    .constdata                               0x080037b6   Section     1520  bsp_ili9341_lcd.o(.constdata)
     .data                                    0x20000000   Section       20  system_stm32f10x.o(.data)
     .data                                    0x20000014   Section       20  stm32f10x_rcc.o(.data)
     APBAHBPrescTable                         0x20000014   Data          16  stm32f10x_rcc.o(.data)
@@ -840,55 +840,55 @@ Image Symbol Table
     XPT2046_Get_TouchedPoint                 0x08002c35   Thumb Code   202  bsp_xpt2046_lcd.o(.text)
     SPI_BGT24MTR12_Init                      0x08002d61   Thumb Code   208  bgt24mtr12.o(.text)
     SPI_BGT24MTR12_SendByte                  0x08002e31   Thumb Code    48  bgt24mtr12.o(.text)
-    SPI_BGT24MTR12_Write                     0x08002e61   Thumb Code   136  bgt24mtr12.o(.text)
-    config                                   0x08002ef9   Thumb Code    56  bsp_adf4158.o(.text)
-    delay                                    0x08002f31   Thumb Code    10  bsp_adf4158.o(.text)
-    ADF4158_GPIO_Config                      0x08002f3b   Thumb Code   136  bsp_adf4158.o(.text)
-    ADF4158_Init                             0x08002fc3   Thumb Code    46  bsp_adf4158.o(.text)
-    WriteToADF4158                           0x08002ff1   Thumb Code   152  bsp_adf4158.o(.text)
-    __aeabi_memset                           0x080030a1   Thumb Code    14  memseta.o(.text)
-    __aeabi_memset4                          0x080030a1   Thumb Code     0  memseta.o(.text)
-    __aeabi_memset8                          0x080030a1   Thumb Code     0  memseta.o(.text)
-    __aeabi_memclr                           0x080030af   Thumb Code     4  memseta.o(.text)
-    __aeabi_memclr4                          0x080030af   Thumb Code     0  memseta.o(.text)
-    __aeabi_memclr8                          0x080030af   Thumb Code     0  memseta.o(.text)
-    _memset$wrapper                          0x080030b3   Thumb Code    18  memseta.o(.text)
-    strlen                                   0x080030c5   Thumb Code    14  strlen.o(.text)
-    __aeabi_dadd                             0x080030d3   Thumb Code   322  dadd.o(.text)
-    __aeabi_dsub                             0x08003215   Thumb Code     6  dadd.o(.text)
-    __aeabi_drsub                            0x0800321b   Thumb Code     6  dadd.o(.text)
-    __aeabi_dmul                             0x08003221   Thumb Code   228  dmul.o(.text)
-    __aeabi_ddiv                             0x08003305   Thumb Code   222  ddiv.o(.text)
-    __aeabi_i2d                              0x080033e3   Thumb Code    34  dflti.o(.text)
-    __aeabi_ui2d                             0x08003405   Thumb Code    26  dfltui.o(.text)
-    __aeabi_d2uiz                            0x0800341f   Thumb Code    50  dfixui.o(.text)
-    __aeabi_cdcmpeq                          0x08003451   Thumb Code     0  cdcmple.o(.text)
-    __aeabi_cdcmple                          0x08003451   Thumb Code    48  cdcmple.o(.text)
-    __aeabi_uidiv                            0x08003481   Thumb Code     0  uidiv.o(.text)
-    __aeabi_uidivmod                         0x08003481   Thumb Code    44  uidiv.o(.text)
-    __aeabi_llsl                             0x080034ad   Thumb Code    30  llshl.o(.text)
-    _ll_shift_l                              0x080034ad   Thumb Code     0  llshl.o(.text)
-    __aeabi_llsr                             0x080034cb   Thumb Code    32  llushr.o(.text)
-    _ll_ushift_r                             0x080034cb   Thumb Code     0  llushr.o(.text)
-    __aeabi_lasr                             0x080034eb   Thumb Code    36  llsshr.o(.text)
-    _ll_sshift_r                             0x080034eb   Thumb Code     0  llsshr.o(.text)
-    __I$use$fp                               0x0800350f   Thumb Code     0  iusefp.o(.text)
-    _double_round                            0x0800350f   Thumb Code    30  depilogue.o(.text)
-    _double_epilogue                         0x0800352d   Thumb Code   156  depilogue.o(.text)
-    __scatterload                            0x080035c9   Thumb Code    28  init.o(.text)
-    __scatterload_rt2                        0x080035c9   Thumb Code     0  init.o(.text)
-    ILI9341_Read_Data                        0x080035ed   Thumb Code     6  bsp_ili9341_lcd.o(i.ILI9341_Read_Data)
-    ILI9341_Write_Cmd                        0x080035f9   Thumb Code     8  bsp_ili9341_lcd.o(i.ILI9341_Write_Cmd)
-    ILI9341_Write_Data                       0x08003601   Thumb Code     6  bsp_ili9341_lcd.o(i.ILI9341_Write_Data)
-    __0sprintf$1                             0x0800360d   Thumb Code    34  printf1.o(i.__0sprintf$1)
-    __1sprintf$1                             0x0800360d   Thumb Code     0  printf1.o(i.__0sprintf$1)
-    __2sprintf                               0x0800360d   Thumb Code     0  printf1.o(i.__0sprintf$1)
-    __scatterload_copy                       0x08003635   Thumb Code    14  handlers.o(i.__scatterload_copy)
-    __scatterload_null                       0x08003643   Thumb Code     2  handlers.o(i.__scatterload_null)
-    __scatterload_zeroinit                   0x08003645   Thumb Code    14  handlers.o(i.__scatterload_zeroinit)
-    ucAscii_1608                             0x080037b2   Data        1520  bsp_ili9341_lcd.o(.constdata)
-    Region$$Table$$Base                      0x08003da4   Number         0  anon$$obj.o(Region$$Table)
-    Region$$Table$$Limit                     0x08003dc4   Number         0  anon$$obj.o(Region$$Table)
+    SPI_BGT24MTR12_Write                     0x08002e61   Thumb Code   138  bgt24mtr12.o(.text)
+    config                                   0x08002efd   Thumb Code    56  bsp_adf4158.o(.text)
+    delay                                    0x08002f35   Thumb Code    10  bsp_adf4158.o(.text)
+    ADF4158_GPIO_Config                      0x08002f3f   Thumb Code   136  bsp_adf4158.o(.text)
+    ADF4158_Init                             0x08002fc7   Thumb Code    46  bsp_adf4158.o(.text)
+    WriteToADF4158                           0x08002ff5   Thumb Code   152  bsp_adf4158.o(.text)
+    __aeabi_memset                           0x080030a5   Thumb Code    14  memseta.o(.text)
+    __aeabi_memset4                          0x080030a5   Thumb Code     0  memseta.o(.text)
+    __aeabi_memset8                          0x080030a5   Thumb Code     0  memseta.o(.text)
+    __aeabi_memclr                           0x080030b3   Thumb Code     4  memseta.o(.text)
+    __aeabi_memclr4                          0x080030b3   Thumb Code     0  memseta.o(.text)
+    __aeabi_memclr8                          0x080030b3   Thumb Code     0  memseta.o(.text)
+    _memset$wrapper                          0x080030b7   Thumb Code    18  memseta.o(.text)
+    strlen                                   0x080030c9   Thumb Code    14  strlen.o(.text)
+    __aeabi_dadd                             0x080030d7   Thumb Code   322  dadd.o(.text)
+    __aeabi_dsub                             0x08003219   Thumb Code     6  dadd.o(.text)
+    __aeabi_drsub                            0x0800321f   Thumb Code     6  dadd.o(.text)
+    __aeabi_dmul                             0x08003225   Thumb Code   228  dmul.o(.text)
+    __aeabi_ddiv                             0x08003309   Thumb Code   222  ddiv.o(.text)
+    __aeabi_i2d                              0x080033e7   Thumb Code    34  dflti.o(.text)
+    __aeabi_ui2d                             0x08003409   Thumb Code    26  dfltui.o(.text)
+    __aeabi_d2uiz                            0x08003423   Thumb Code    50  dfixui.o(.text)
+    __aeabi_cdcmpeq                          0x08003455   Thumb Code     0  cdcmple.o(.text)
+    __aeabi_cdcmple                          0x08003455   Thumb Code    48  cdcmple.o(.text)
+    __aeabi_uidiv                            0x08003485   Thumb Code     0  uidiv.o(.text)
+    __aeabi_uidivmod                         0x08003485   Thumb Code    44  uidiv.o(.text)
+    __aeabi_llsl                             0x080034b1   Thumb Code    30  llshl.o(.text)
+    _ll_shift_l                              0x080034b1   Thumb Code     0  llshl.o(.text)
+    __aeabi_llsr                             0x080034cf   Thumb Code    32  llushr.o(.text)
+    _ll_ushift_r                             0x080034cf   Thumb Code     0  llushr.o(.text)
+    __aeabi_lasr                             0x080034ef   Thumb Code    36  llsshr.o(.text)
+    _ll_sshift_r                             0x080034ef   Thumb Code     0  llsshr.o(.text)
+    __I$use$fp                               0x08003513   Thumb Code     0  iusefp.o(.text)
+    _double_round                            0x08003513   Thumb Code    30  depilogue.o(.text)
+    _double_epilogue                         0x08003531   Thumb Code   156  depilogue.o(.text)
+    __scatterload                            0x080035cd   Thumb Code    28  init.o(.text)
+    __scatterload_rt2                        0x080035cd   Thumb Code     0  init.o(.text)
+    ILI9341_Read_Data                        0x080035f1   Thumb Code     6  bsp_ili9341_lcd.o(i.ILI9341_Read_Data)
+    ILI9341_Write_Cmd                        0x080035fd   Thumb Code     8  bsp_ili9341_lcd.o(i.ILI9341_Write_Cmd)
+    ILI9341_Write_Data                       0x08003605   Thumb Code     6  bsp_ili9341_lcd.o(i.ILI9341_Write_Data)
+    __0sprintf$1                             0x08003611   Thumb Code    34  printf1.o(i.__0sprintf$1)
+    __1sprintf$1                             0x08003611   Thumb Code     0  printf1.o(i.__0sprintf$1)
+    __2sprintf                               0x08003611   Thumb Code     0  printf1.o(i.__0sprintf$1)
+    __scatterload_copy                       0x08003639   Thumb Code    14  handlers.o(i.__scatterload_copy)
+    __scatterload_null                       0x08003647   Thumb Code     2  handlers.o(i.__scatterload_null)
+    __scatterload_zeroinit                   0x08003649   Thumb Code    14  handlers.o(i.__scatterload_zeroinit)
+    ucAscii_1608                             0x080037b6   Data        1520  bsp_ili9341_lcd.o(.constdata)
+    Region$$Table$$Base                      0x08003da8   Number         0  anon$$obj.o(Region$$Table)
+    Region$$Table$$Limit                     0x08003dc8   Number         0  anon$$obj.o(Region$$Table)
     SystemCoreClock                          0x20000000   Data           4  system_stm32f10x.o(.data)
     AHBPrescTable                            0x20000004   Data          16  system_stm32f10x.o(.data)
     Key1Down_Count                           0x20000028   Data           1  stm32f10x_it.o(.data)
@@ -906,9 +906,9 @@ Memory Map of the image
 
   Image Entry point : 0x08000131
 
-  Load Region LR_IROM1 (Base: 0x08000000, Size: 0x00003e28, Max: 0x00080000, ABSOLUTE)
+  Load Region LR_IROM1 (Base: 0x08000000, Size: 0x00003e2c, Max: 0x00080000, ABSOLUTE)
 
-    Execution Region ER_IROM1 (Base: 0x08000000, Size: 0x00003dc4, Max: 0x00080000, ABSOLUTE)
+    Execution Region ER_IROM1 (Base: 0x08000000, Size: 0x00003dc8, Max: 0x00080000, ABSOLUTE)
 
     Base Addr    Size         Type   Attr      Idx    E Section Name        Object
 
@@ -937,37 +937,37 @@ Memory Map of the image
     0x08001860   0x00000b64   Code   RO          495    .text               bsp_ili9341_lcd.o
     0x080023c4   0x0000000c   Code   RO          537    .text               bsp_lcd.o
     0x080023d0   0x00000990   Code   RO          556    .text               bsp_xpt2046_lcd.o
-    0x08002d60   0x00000198   Code   RO          595    .text               bgt24mtr12.o
-    0x08002ef8   0x000001a8   Code   RO          625    .text               bsp_adf4158.o
-    0x080030a0   0x00000024   Code   RO          661    .text               mc_w.l(memseta.o)
-    0x080030c4   0x0000000e   Code   RO          663    .text               mc_w.l(strlen.o)
-    0x080030d2   0x0000014e   Code   RO          926    .text               mf_w.l(dadd.o)
-    0x08003220   0x000000e4   Code   RO          928    .text               mf_w.l(dmul.o)
-    0x08003304   0x000000de   Code   RO          930    .text               mf_w.l(ddiv.o)
-    0x080033e2   0x00000022   Code   RO          932    .text               mf_w.l(dflti.o)
-    0x08003404   0x0000001a   Code   RO          934    .text               mf_w.l(dfltui.o)
-    0x0800341e   0x00000032   Code   RO          936    .text               mf_w.l(dfixui.o)
-    0x08003450   0x00000030   Code   RO          938    .text               mf_w.l(cdcmple.o)
-    0x08003480   0x0000002c   Code   RO          957    .text               mc_w.l(uidiv.o)
-    0x080034ac   0x0000001e   Code   RO          961    .text               mc_w.l(llshl.o)
-    0x080034ca   0x00000020   Code   RO          963    .text               mc_w.l(llushr.o)
-    0x080034ea   0x00000024   Code   RO          965    .text               mc_w.l(llsshr.o)
-    0x0800350e   0x00000000   Code   RO          967    .text               mc_w.l(iusefp.o)
-    0x0800350e   0x000000ba   Code   RO          968    .text               mf_w.l(depilogue.o)
-    0x080035c8   0x00000024   Code   RO          974    .text               mc_w.l(init.o)
-    0x080035ec   0x0000000c   Code   RO          517    i.ILI9341_Read_Data  bsp_ili9341_lcd.o
-    0x080035f8   0x00000008   Code   RO          507    i.ILI9341_Write_Cmd  bsp_ili9341_lcd.o
-    0x08003600   0x0000000c   Code   RO          512    i.ILI9341_Write_Data  bsp_ili9341_lcd.o
-    0x0800360c   0x00000028   Code   RO          712    i.__0sprintf$1      mc_w.l(printf1.o)
-    0x08003634   0x0000000e   Code   RO          980    i.__scatterload_copy  mc_w.l(handlers.o)
-    0x08003642   0x00000002   Code   RO          981    i.__scatterload_null  mc_w.l(handlers.o)
-    0x08003644   0x0000000e   Code   RO          982    i.__scatterload_zeroinit  mc_w.l(handlers.o)
-    0x08003652   0x00000002   PAD
-    0x08003654   0x00000154   Code   RO          717    i._printf_core      mc_w.l(printf1.o)
-    0x080037a8   0x0000000a   Code   RO          719    i._sputc            mc_w.l(printf1.o)
-    0x080037b2   0x000005f0   Data   RO          496    .constdata          bsp_ili9341_lcd.o
-    0x08003da2   0x00000002   PAD
-    0x08003da4   0x00000020   Data   RO          978    Region$$Table       anon$$obj.o
+    0x08002d60   0x0000019c   Code   RO          595    .text               bgt24mtr12.o
+    0x08002efc   0x000001a8   Code   RO          625    .text               bsp_adf4158.o
+    0x080030a4   0x00000024   Code   RO          661    .text               mc_w.l(memseta.o)
+    0x080030c8   0x0000000e   Code   RO          663    .text               mc_w.l(strlen.o)
+    0x080030d6   0x0000014e   Code   RO          926    .text               mf_w.l(dadd.o)
+    0x08003224   0x000000e4   Code   RO          928    .text               mf_w.l(dmul.o)
+    0x08003308   0x000000de   Code   RO          930    .text               mf_w.l(ddiv.o)
+    0x080033e6   0x00000022   Code   RO          932    .text               mf_w.l(dflti.o)
+    0x08003408   0x0000001a   Code   RO          934    .text               mf_w.l(dfltui.o)
+    0x08003422   0x00000032   Code   RO          936    .text               mf_w.l(dfixui.o)
+    0x08003454   0x00000030   Code   RO          938    .text               mf_w.l(cdcmple.o)
+    0x08003484   0x0000002c   Code   RO          957    .text               mc_w.l(uidiv.o)
+    0x080034b0   0x0000001e   Code   RO          961    .text               mc_w.l(llshl.o)
+    0x080034ce   0x00000020   Code   RO          963    .text               mc_w.l(llushr.o)
+    0x080034ee   0x00000024   Code   RO          965    .text               mc_w.l(llsshr.o)
+    0x08003512   0x00000000   Code   RO          967    .text               mc_w.l(iusefp.o)
+    0x08003512   0x000000ba   Code   RO          968    .text               mf_w.l(depilogue.o)
+    0x080035cc   0x00000024   Code   RO          974    .text               mc_w.l(init.o)
+    0x080035f0   0x0000000c   Code   RO          517    i.ILI9341_Read_Data  bsp_ili9341_lcd.o
+    0x080035fc   0x00000008   Code   RO          507    i.ILI9341_Write_Cmd  bsp_ili9341_lcd.o
+    0x08003604   0x0000000c   Code   RO          512    i.ILI9341_Write_Data  bsp_ili9341_lcd.o
+    0x08003610   0x00000028   Code   RO          712    i.__0sprintf$1      mc_w.l(printf1.o)
+    0x08003638   0x0000000e   Code   RO          980    i.__scatterload_copy  mc_w.l(handlers.o)
+    0x08003646   0x00000002   Code   RO          981    i.__scatterload_null  mc_w.l(handlers.o)
+    0x08003648   0x0000000e   Code   RO          982    i.__scatterload_zeroinit  mc_w.l(handlers.o)
+    0x08003656   0x00000002   PAD
+    0x08003658   0x00000154   Code   RO          717    i._printf_core      mc_w.l(printf1.o)
+    0x080037ac   0x0000000a   Code   RO          719    i._sputc            mc_w.l(printf1.o)
+    0x080037b6   0x000005f0   Data   RO          496    .constdata          bsp_ili9341_lcd.o
+    0x08003da6   0x00000002   PAD
+    0x08003da8   0x00000020   Data   RO          978    Region$$Table       anon$$obj.o
 
 
     Execution Region RW_IRAM1 (Base: 0x20000000, Size: 0x00000488, Max: 0x00010000, ABSOLUTE)
@@ -992,27 +992,27 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
 
-       408         24          0          0          0       1219   bgt24mtr12.o
-       424         24          0          0         32       2062   bsp_adf4158.o
-       236          8          0          0          0       1092   bsp_exti.o
-      2948         30       1520          0          0      12320   bsp_ili9341_lcd.o
-        12          0          0          0          0        451   bsp_lcd.o
-        96          6          0          0          0        534   bsp_led.o
-      2448        110          0         49          0       7931   bsp_xpt2046_lcd.o
-         0          0          0          0          0       4496   core_cm3.o
-       148         28          0          0          0      15778   main.o
-       220         22          0          0          0       1821   misc.o
-        36          8        304          0       1024        868   startup_stm32f10x_hd.o
-       284         10          0          0          0       2279   stm32f10x_exti.o
-      1548         18          0          0          0       5399   stm32f10x_fsmc.o
-       860         38          0          0          0       5753   stm32f10x_gpio.o
-       296         54          0          2          0       2025   stm32f10x_it.o
-       932         36          0         20          0       8940   stm32f10x_rcc.o
-       780         14          0          0          0       6638   stm32f10x_spi.o
-       480         38          0         20          0     240947   system_stm32f10x.o
+       412         26          0          0          0       1275   bgt24mtr12.o
+       424         24          0          0         32       2074   bsp_adf4158.o
+       236          8          0          0          0       1096   bsp_exti.o
+      2948         30       1520          0          0      12360   bsp_ili9341_lcd.o
+        12          0          0          0          0        455   bsp_lcd.o
+        96          6          0          0          0        538   bsp_led.o
+      2448        110          0         49          0       7963   bsp_xpt2046_lcd.o
+         0          0          0          0          0       4520   core_cm3.o
+       148         28          0          0          0      15798   main.o
+       220         22          0          0          0       1829   misc.o
+        36          8        304          0       1024        872   startup_stm32f10x_hd.o
+       284         10          0          0          0       2287   stm32f10x_exti.o
+      1548         18          0          0          0       5407   stm32f10x_fsmc.o
+       860         38          0          0          0       5761   stm32f10x_gpio.o
+       296         54          0          2          0       2033   stm32f10x_it.o
+       932         36          0         20          0       8952   stm32f10x_rcc.o
+       780         14          0          0          0       6646   stm32f10x_spi.o
+       480         38          0         20          0     241003   system_stm32f10x.o
 
     ----------------------------------------------------------------------
-     12156        468       1858        100       1060     320553   Object Totals
+     12160        470       1858        100       1060     320869   Object Totals
          0          0         32          0          0          0   (incl. Generated)
          0          0          2          9          4          0   (incl. Padding)
 
@@ -1068,15 +1068,15 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-     13954        494       1858        100       1060     320013   Grand Totals
-     13954        494       1858        100       1060     320013   ELF Image Totals
-     13954        494       1858        100          0          0   ROM Totals
+     13958        496       1858        100       1060     320329   Grand Totals
+     13958        496       1858        100       1060     320329   ELF Image Totals
+     13958        496       1858        100          0          0   ROM Totals
 
 ==============================================================================
 
-    Total RO  Size (Code + RO Data)                15812 (  15.44kB)
+    Total RO  Size (Code + RO Data)                15816 (  15.45kB)
     Total RW  Size (RW Data + ZI Data)              1160 (   1.13kB)
-    Total ROM Size (Code + RO Data + RW Data)      15912 (  15.54kB)
+    Total ROM Size (Code + RO Data + RW Data)      15916 (  15.54kB)
 
 ==============================================================================
 

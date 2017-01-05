@@ -50,7 +50,7 @@ int main(void)
 	SEI();	
 	/* exti line config */
 	EXTI1_Pxy_Config(); 
-	EXTI2_Pxy_Config();
+//	EXTI2_Pxy_Config();
 	
 	ILI9341_DispString_EN ( 0, 10, "BGT Power Select", macBACKGROUND, macRED );
 	ILI9341_Display_Num ( 150, 10, Key1Down_Count, macBACKGROUND, macRED );
@@ -61,7 +61,7 @@ int main(void)
 	/* wait interrupt */
 	while(1)                            
 	{
-		SPI_BGT24MTR12_Write();
+		SPI_BGT24MTR12_Write(Key1Down_Count);
 //		switch(Key2Down_Count)
 //		{
 //			case '0':WriteToADF4158(ADF4158Registers,0);break;

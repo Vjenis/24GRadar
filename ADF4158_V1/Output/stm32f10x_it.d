@@ -2,7 +2,7 @@
 ..\..\output\stm32f10x_it.o: ..\..\User\stm32f10x_it.h
 ..\..\output\stm32f10x_it.o: ..\..\Libraries\CMSIS\stm32f10x.h
 ..\..\output\stm32f10x_it.o: ..\..\Libraries\CMSIS\core_cm3.h
-..\..\output\stm32f10x_it.o: D:\keil\ARM\ARMCC\Bin\..\include\stdint.h
+..\..\output\stm32f10x_it.o: F:\Program Files\keil\ARM\ARMCC\Bin\..\include\stdint.h
 ..\..\output\stm32f10x_it.o: ..\..\Libraries\CMSIS\system_stm32f10x.h
 ..\..\output\stm32f10x_it.o: ..\..\User\stm32f10x_conf.h
 ..\..\output\stm32f10x_it.o: ..\..\Libraries\FWlib\inc\stm32f10x_adc.h
@@ -34,8 +34,8 @@
 ..\..\output\stm32f10x_it.o: ..\..\User\lcd\bsp_lcd.h
 ..\..\output\stm32f10x_it.o: ..\..\User\lcd\bsp_ili9341_lcd.h
 ..\..\output\stm32f10x_it.o: ..\..\User\lcd\bsp_xpt2046_lcd.h
-..\..\output\stm32f10x_it.o: D:\keil\ARM\ARMCC\Bin\..\include\stdio.h
+..\..\output\stm32f10x_it.o: F:\Program Files\keil\ARM\ARMCC\Bin\..\include\stdio.h
 ..\..\output\stm32f10x_it.o: ..\..\User\StmFlash\stm_flash.h
-..\..\output\stm32f10x_it.o: D:\keil\ARM\ARMCC\Bin\..\include\string.h
+..\..\output\stm32f10x_it.o: F:\Program Files\keil\ARM\ARMCC\Bin\..\include\string.h
 ..\..\output\stm32f10x_it.o: ..\..\User\BGT24MTR12\BGT24MTR12.h
 ..\..\output\stm32f10x_it.o: ..\..\User\ADF4158\bsp_adf4158.h

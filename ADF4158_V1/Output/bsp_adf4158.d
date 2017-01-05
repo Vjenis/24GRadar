@@ -2,7 +2,7 @@
 ..\..\output\bsp_adf4158.o: ..\..\User\ADF4158\bsp_adf4158.h
 ..\..\output\bsp_adf4158.o: ..\..\Libraries\CMSIS\stm32f10x.h
 ..\..\output\bsp_adf4158.o: ..\..\Libraries\CMSIS\core_cm3.h
-..\..\output\bsp_adf4158.o: D:\keil\ARM\ARMCC\Bin\..\include\stdint.h
+..\..\output\bsp_adf4158.o: F:\Program Files\keil\ARM\ARMCC\Bin\..\include\stdint.h
 ..\..\output\bsp_adf4158.o: ..\..\Libraries\CMSIS\system_stm32f10x.h
 ..\..\output\bsp_adf4158.o: ..\..\User\stm32f10x_conf.h
 ..\..\output\bsp_adf4158.o: ..\..\Libraries\FWlib\inc\stm32f10x_adc.h

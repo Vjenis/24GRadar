@@ -3,7 +3,7 @@
 <title>Static Call Graph - [..\..\Output\Template.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image ..\..\Output\Template.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060061: Last Updated: Thu Jan 05 15:15:01 2017
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060061: Last Updated: Thu Jan 05 20:35:43 2017
 <BR><P>
 <H3>Maximum Stack Usage =        120 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -306,18 +306,18 @@ Global Symbols
 </UL>
 <P><STRONG><a name="[be]"></a>SystemCoreClockUpdate</STRONG> (Thumb, 142 bytes, Stack size 8 bytes, system_stm32f10x.o(.text), UNUSED)
 
-<P><STRONG><a name="[65]"></a>NVIC_PriorityGroupConfig</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, misc.o(.text))
+<P><STRONG><a name="[64]"></a>NVIC_PriorityGroupConfig</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, misc.o(.text))
 <BR><BR>[Called By]<UL><LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;XPT2046_EXTI_NVIC_Config
-<LI><a href="#[67]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NVIC2_Configuration
-<LI><a href="#[64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NVIC1_Configuration
+<LI><a href="#[66]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NVIC2_Configuration
+<LI><a href="#[63]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NVIC1_Configuration
 </UL>
 
-<P><STRONG><a name="[66]"></a>NVIC_Init</STRONG> (Thumb, 100 bytes, Stack size 16 bytes, misc.o(.text))
+<P><STRONG><a name="[65]"></a>NVIC_Init</STRONG> (Thumb, 100 bytes, Stack size 16 bytes, misc.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = NVIC_Init
 </UL>
 <BR>[Called By]<UL><LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;XPT2046_EXTI_NVIC_Config
-<LI><a href="#[67]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NVIC2_Configuration
-<LI><a href="#[64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NVIC1_Configuration
+<LI><a href="#[66]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NVIC2_Configuration
+<LI><a href="#[63]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NVIC1_Configuration
 </UL>
 
 <P><STRONG><a name="[bf]"></a>NVIC_SetVectorTable</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, misc.o(.text), UNUSED)
@@ -328,9 +328,9 @@ Global Symbols
 
 <P><STRONG><a name="[c2]"></a>EXTI_DeInit</STRONG> (Thumb, 28 bytes, Stack size 0 bytes, stm32f10x_exti.o(.text), UNUSED)
 
-<P><STRONG><a name="[6b]"></a>EXTI_Init</STRONG> (Thumb, 142 bytes, Stack size 0 bytes, stm32f10x_exti.o(.text))
+<P><STRONG><a name="[6a]"></a>EXTI_Init</STRONG> (Thumb, 142 bytes, Stack size 0 bytes, stm32f10x_exti.o(.text))
 <BR><BR>[Called By]<UL><LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;XPT2046_EXTI_Config
-<LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EXTI2_Pxy_Config
+<LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EXTI2_Pxy_Config
 <LI><a href="#[5d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EXTI1_Pxy_Config
 </UL>
 
@@ -342,13 +342,13 @@ Global Symbols
 
 <P><STRONG><a name="[c6]"></a>EXTI_ClearFlag</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, stm32f10x_exti.o(.text), UNUSED)
 
-<P><STRONG><a name="[62]"></a>EXTI_GetITStatus</STRONG> (Thumb, 34 bytes, Stack size 0 bytes, stm32f10x_exti.o(.text))
+<P><STRONG><a name="[61]"></a>EXTI_GetITStatus</STRONG> (Thumb, 34 bytes, Stack size 0 bytes, stm32f10x_exti.o(.text))
 <BR><BR>[Called By]<UL><LI><a href="#[32]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EXTI15_10_IRQHandler
 <LI><a href="#[10]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EXTI0_IRQHandler
 <LI><a href="#[14]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EXTI4_IRQHandler
 </UL>
 
-<P><STRONG><a name="[63]"></a>EXTI_ClearITPendingBit</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, stm32f10x_exti.o(.text))
+<P><STRONG><a name="[62]"></a>EXTI_ClearITPendingBit</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, stm32f10x_exti.o(.text))
 <BR><BR>[Called By]<UL><LI><a href="#[32]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EXTI15_10_IRQHandler
 <LI><a href="#[10]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EXTI0_IRQHandler
 <LI><a href="#[14]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EXTI4_IRQHandler
@@ -404,16 +404,16 @@ Global Symbols
 <BR><BR>[Calls]<UL><LI><a href="#[4f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_APB2PeriphResetCmd
 </UL>
 
-<P><STRONG><a name="[69]"></a>GPIO_Init</STRONG> (Thumb, 278 bytes, Stack size 24 bytes, stm32f10x_gpio.o(.text))
+<P><STRONG><a name="[68]"></a>GPIO_Init</STRONG> (Thumb, 278 bytes, Stack size 24 bytes, stm32f10x_gpio.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = GPIO_Init
 </UL>
 <BR>[Called By]<UL><LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADF4158_GPIO_Config
 <LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;XPT2046_GPIO_SPI_Config
 <LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;XPT2046_EXTI_Config
 <LI><a href="#[6d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ILI9341_GPIO_Config
+<LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EXTI2_Pxy_Config
 <LI><a href="#[5b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_BGT24MTR12_Init
 <LI><a href="#[57]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LED_GPIO_Config
-<LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EXTI2_Pxy_Config
 <LI><a href="#[5d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EXTI1_Pxy_Config
 </UL>
 
@@ -436,7 +436,7 @@ Global Symbols
 <LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;XPT2046_WriteCMD
 <LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ILI9341_BackLed_Control
 <LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ILI9341_Rst
-<LI><a href="#[61]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_BGT24MTR12_Write
+<LI><a href="#[60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_BGT24MTR12_Write
 <LI><a href="#[5b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_BGT24MTR12_Init
 <LI><a href="#[57]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LED_GPIO_Config
 </UL>
@@ -448,7 +448,7 @@ Global Symbols
 <LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;XPT2046_GPIO_SPI_Config
 <LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ILI9341_BackLed_Control
 <LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ILI9341_Rst
-<LI><a href="#[61]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_BGT24MTR12_Write
+<LI><a href="#[60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_BGT24MTR12_Write
 </UL>
 
 <P><STRONG><a name="[dc]"></a>GPIO_WriteBit</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, stm32f10x_gpio.o(.text), UNUSED)
@@ -463,11 +463,11 @@ Global Symbols
 
 <P><STRONG><a name="[e1]"></a>GPIO_PinRemapConfig</STRONG> (Thumb, 138 bytes, Stack size 20 bytes, stm32f10x_gpio.o(.text), UNUSED)
 
-<P><STRONG><a name="[6a]"></a>GPIO_EXTILineConfig</STRONG> (Thumb, 66 bytes, Stack size 12 bytes, stm32f10x_gpio.o(.text))
+<P><STRONG><a name="[69]"></a>GPIO_EXTILineConfig</STRONG> (Thumb, 66 bytes, Stack size 12 bytes, stm32f10x_gpio.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = GPIO_EXTILineConfig
 </UL>
 <BR>[Called By]<UL><LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;XPT2046_EXTI_Config
-<LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EXTI2_Pxy_Config
+<LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EXTI2_Pxy_Config
 <LI><a href="#[5d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EXTI1_Pxy_Config
 </UL>
 
@@ -525,14 +525,14 @@ Global Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ILI9341_FSMC_Config
 </UL>
 
-<P><STRONG><a name="[68]"></a>RCC_APB2PeriphClockCmd</STRONG> (Thumb, 26 bytes, Stack size 0 bytes, stm32f10x_rcc.o(.text))
+<P><STRONG><a name="[67]"></a>RCC_APB2PeriphClockCmd</STRONG> (Thumb, 26 bytes, Stack size 0 bytes, stm32f10x_rcc.o(.text))
 <BR><BR>[Called By]<UL><LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADF4158_GPIO_Config
 <LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;XPT2046_GPIO_SPI_Config
 <LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;XPT2046_EXTI_Config
 <LI><a href="#[6d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ILI9341_GPIO_Config
+<LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EXTI2_Pxy_Config
 <LI><a href="#[5b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_BGT24MTR12_Init
 <LI><a href="#[57]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LED_GPIO_Config
-<LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EXTI2_Pxy_Config
 <LI><a href="#[5d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EXTI1_Pxy_Config
 </UL>
 
@@ -626,15 +626,14 @@ Global Symbols
 <P><STRONG><a name="[46]"></a>main</STRONG> (Thumb, 120 bytes, Stack size 8 bytes, main.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 120<LI>Call Chain = main &rArr; LCD_Init &rArr; ILI9341_Init &rArr; ILI9341_FSMC_Config
 </UL>
-<BR>[Calls]<UL><LI><a href="#[61]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_BGT24MTR12_Write
+<BR>[Calls]<UL><LI><a href="#[60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_BGT24MTR12_Write
 <LI><a href="#[5b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_BGT24MTR12_Init
 <LI><a href="#[57]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LED_GPIO_Config
 <LI><a href="#[58]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Init
 <LI><a href="#[59]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ILI9341_GramScan
-<LI><a href="#[60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ILI9341_Display_Num
-<LI><a href="#[5f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ILI9341_DispString_EN
+<LI><a href="#[5f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ILI9341_Display_Num
+<LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ILI9341_DispString_EN
 <LI><a href="#[5a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ILI9341_Clear
-<LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EXTI2_Pxy_Config
 <LI><a href="#[5d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EXTI1_Pxy_Config
 <LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADF4158_Init
 </UL>
@@ -670,61 +669,57 @@ Global Symbols
 <P><STRONG><a name="[14]"></a>EXTI4_IRQHandler</STRONG> (Thumb, 24 bytes, Stack size 8 bytes, stm32f10x_it.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = EXTI4_IRQHandler
 </UL>
-<BR>[Calls]<UL><LI><a href="#[63]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EXTI_ClearITPendingBit
-<LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EXTI_GetITStatus
+<BR>[Calls]<UL><LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EXTI_ClearITPendingBit
+<LI><a href="#[61]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EXTI_GetITStatus
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
 </UL>
 <P><STRONG><a name="[10]"></a>EXTI0_IRQHandler</STRONG> (Thumb, 94 bytes, Stack size 8 bytes, stm32f10x_it.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 104<LI>Call Chain = EXTI0_IRQHandler &rArr; ILI9341_Display_Num &rArr; ILI9341_DispChar_EN &rArr; ILI9341_OpenWindow
 </UL>
-<BR>[Calls]<UL><LI><a href="#[63]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EXTI_ClearITPendingBit
-<LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EXTI_GetITStatus
-<LI><a href="#[60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ILI9341_Display_Num
-<LI><a href="#[5f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ILI9341_DispString_EN
+<BR>[Calls]<UL><LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EXTI_ClearITPendingBit
+<LI><a href="#[61]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EXTI_GetITStatus
+<LI><a href="#[5f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ILI9341_Display_Num
+<LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ILI9341_DispString_EN
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
 </UL>
 <P><STRONG><a name="[32]"></a>EXTI15_10_IRQHandler</STRONG> (Thumb, 98 bytes, Stack size 8 bytes, stm32f10x_it.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 104<LI>Call Chain = EXTI15_10_IRQHandler &rArr; ILI9341_Display_Num &rArr; ILI9341_DispChar_EN &rArr; ILI9341_OpenWindow
 </UL>
-<BR>[Calls]<UL><LI><a href="#[63]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EXTI_ClearITPendingBit
-<LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EXTI_GetITStatus
-<LI><a href="#[60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ILI9341_Display_Num
-<LI><a href="#[5f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ILI9341_DispString_EN
+<BR>[Calls]<UL><LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EXTI_ClearITPendingBit
+<LI><a href="#[61]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EXTI_GetITStatus
+<LI><a href="#[5f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ILI9341_Display_Num
+<LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ILI9341_DispString_EN
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
 </UL>
 <P><STRONG><a name="[5d]"></a>EXTI1_Pxy_Config</STRONG> (Thumb, 72 bytes, Stack size 16 bytes, bsp_exti.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = EXTI1_Pxy_Config &rArr; GPIO_Init
 </UL>
-<BR>[Calls]<UL><LI><a href="#[68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_APB2PeriphClockCmd
-<LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_EXTILineConfig
-<LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_Init
-<LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EXTI_Init
-<LI><a href="#[64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NVIC1_Configuration
+<BR>[Calls]<UL><LI><a href="#[67]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_APB2PeriphClockCmd
+<LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_EXTILineConfig
+<LI><a href="#[68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_Init
+<LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EXTI_Init
+<LI><a href="#[63]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NVIC1_Configuration
 </UL>
 <BR>[Called By]<UL><LI><a href="#[46]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[5e]"></a>EXTI2_Pxy_Config</STRONG> (Thumb, 76 bytes, Stack size 16 bytes, bsp_exti.o(.text))
-<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = EXTI2_Pxy_Config &rArr; GPIO_Init
-</UL>
-<BR>[Calls]<UL><LI><a href="#[68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_APB2PeriphClockCmd
-<LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_EXTILineConfig
-<LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_Init
-<LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EXTI_Init
-<LI><a href="#[67]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NVIC2_Configuration
-</UL>
-<BR>[Called By]<UL><LI><a href="#[46]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+<P><STRONG><a name="[6b]"></a>EXTI2_Pxy_Config</STRONG> (Thumb, 76 bytes, Stack size 16 bytes, bsp_exti.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[67]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_APB2PeriphClockCmd
+<LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_EXTILineConfig
+<LI><a href="#[68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_Init
+<LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EXTI_Init
+<LI><a href="#[66]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NVIC2_Configuration
 </UL>
 
 <P><STRONG><a name="[57]"></a>LED_GPIO_Config</STRONG> (Thumb, 90 bytes, Stack size 8 bytes, bsp_led.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = LED_GPIO_Config &rArr; GPIO_Init
 </UL>
-<BR>[Calls]<UL><LI><a href="#[68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_APB2PeriphClockCmd
+<BR>[Calls]<UL><LI><a href="#[67]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_APB2PeriphClockCmd
 <LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_SetBits
-<LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_Init
+<LI><a href="#[68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_Init
 </UL>
 <BR>[Called By]<UL><LI><a href="#[46]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
@@ -830,11 +825,11 @@ Global Symbols
 <LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ILI9341_OpenWindow
 </UL>
 <BR>[Called By]<UL><LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ILI9341_DispString_EN_CH
-<LI><a href="#[60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ILI9341_Display_Num
-<LI><a href="#[5f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ILI9341_DispString_EN
+<LI><a href="#[5f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ILI9341_Display_Num
+<LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ILI9341_DispString_EN
 </UL>
 
-<P><STRONG><a name="[5f]"></a>ILI9341_DispString_EN</STRONG> (Thumb, 82 bytes, Stack size 32 bytes, bsp_ili9341_lcd.o(.text))
+<P><STRONG><a name="[5e]"></a>ILI9341_DispString_EN</STRONG> (Thumb, 82 bytes, Stack size 32 bytes, bsp_ili9341_lcd.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 96<LI>Call Chain = ILI9341_DispString_EN &rArr; ILI9341_DispChar_EN &rArr; ILI9341_OpenWindow
 </UL>
 <BR>[Calls]<UL><LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ILI9341_DispChar_EN
@@ -863,7 +858,7 @@ Global Symbols
 <LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ILI9341_DispChar_EN
 </UL>
 
-<P><STRONG><a name="[60]"></a>ILI9341_Display_Num</STRONG> (Thumb, 72 bytes, Stack size 32 bytes, bsp_ili9341_lcd.o(.text))
+<P><STRONG><a name="[5f]"></a>ILI9341_Display_Num</STRONG> (Thumb, 72 bytes, Stack size 32 bytes, bsp_ili9341_lcd.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 96<LI>Call Chain = ILI9341_Display_Num &rArr; ILI9341_DispChar_EN &rArr; ILI9341_OpenWindow
 </UL>
 <BR>[Calls]<UL><LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ILI9341_DispChar_EN
@@ -905,7 +900,7 @@ Global Symbols
 <LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;XPT2046_ReadAdc_Smooth_XY
 <LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;XPT2046_DelayUS
 <LI><a href="#[59]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ILI9341_GramScan
-<LI><a href="#[5f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ILI9341_DispString_EN
+<LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ILI9341_DispString_EN
 <LI><a href="#[5a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ILI9341_Clear
 </UL>
 
@@ -922,9 +917,9 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_Cmd
 <LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_Init
-<LI><a href="#[68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_APB2PeriphClockCmd
+<LI><a href="#[67]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_APB2PeriphClockCmd
 <LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_SetBits
-<LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_Init
+<LI><a href="#[68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_Init
 </UL>
 <BR>[Called By]<UL><LI><a href="#[46]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
@@ -936,11 +931,11 @@ Global Symbols
 <LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_I2S_ReceiveData
 <LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_I2S_SendData
 </UL>
-<BR>[Called By]<UL><LI><a href="#[61]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_BGT24MTR12_Write
+<BR>[Called By]<UL><LI><a href="#[60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_BGT24MTR12_Write
 </UL>
 
-<P><STRONG><a name="[61]"></a>SPI_BGT24MTR12_Write</STRONG> (Thumb, 136 bytes, Stack size 8 bytes, bgt24mtr12.o(.text))
-<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = SPI_BGT24MTR12_Write &rArr; SPI_BGT24MTR12_SendByte
+<P><STRONG><a name="[60]"></a>SPI_BGT24MTR12_Write</STRONG> (Thumb, 138 bytes, Stack size 16 bytes, bgt24mtr12.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = SPI_BGT24MTR12_Write &rArr; SPI_BGT24MTR12_SendByte
 </UL>
 <BR>[Calls]<UL><LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ResetBits
 <LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_SetBits
@@ -958,8 +953,8 @@ Global Symbols
 <P><STRONG><a name="[a7]"></a>ADF4158_GPIO_Config</STRONG> (Thumb, 136 bytes, Stack size 8 bytes, bsp_adf4158.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = ADF4158_GPIO_Config &rArr; GPIO_Init
 </UL>
-<BR>[Calls]<UL><LI><a href="#[68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_APB2PeriphClockCmd
-<LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_Init
+<BR>[Calls]<UL><LI><a href="#[67]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_APB2PeriphClockCmd
+<LI><a href="#[68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_Init
 </UL>
 <BR>[Called By]<UL><LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADF4158_Init
 </UL>
@@ -1175,22 +1170,20 @@ Local Symbols
 <BR>[Called By]<UL><LI><a href="#[47]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemInit
 </UL>
 
-<P><STRONG><a name="[64]"></a>NVIC1_Configuration</STRONG> (Thumb, 40 bytes, Stack size 8 bytes, bsp_exti.o(.text))
+<P><STRONG><a name="[63]"></a>NVIC1_Configuration</STRONG> (Thumb, 40 bytes, Stack size 8 bytes, bsp_exti.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = NVIC1_Configuration &rArr; NVIC_Init
 </UL>
-<BR>[Calls]<UL><LI><a href="#[66]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NVIC_Init
-<LI><a href="#[65]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NVIC_PriorityGroupConfig
+<BR>[Calls]<UL><LI><a href="#[65]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NVIC_Init
+<LI><a href="#[64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NVIC_PriorityGroupConfig
 </UL>
 <BR>[Called By]<UL><LI><a href="#[5d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EXTI1_Pxy_Config
 </UL>
 
-<P><STRONG><a name="[67]"></a>NVIC2_Configuration</STRONG> (Thumb, 40 bytes, Stack size 8 bytes, bsp_exti.o(.text))
-<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = NVIC2_Configuration &rArr; NVIC_Init
+<P><STRONG><a name="[66]"></a>NVIC2_Configuration</STRONG> (Thumb, 40 bytes, Stack size 8 bytes, bsp_exti.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[65]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NVIC_Init
+<LI><a href="#[64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NVIC_PriorityGroupConfig
 </UL>
-<BR>[Calls]<UL><LI><a href="#[66]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NVIC_Init
-<LI><a href="#[65]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NVIC_PriorityGroupConfig
-</UL>
-<BR>[Called By]<UL><LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EXTI2_Pxy_Config
+<BR>[Called By]<UL><LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EXTI2_Pxy_Config
 </UL>
 
 <P><STRONG><a name="[75]"></a>ILI9341_Delay</STRONG> (Thumb, 18 bytes, Stack size 8 bytes, bsp_ili9341_lcd.o(.text))
@@ -1203,8 +1196,8 @@ Local Symbols
 <P><STRONG><a name="[6d]"></a>ILI9341_GPIO_Config</STRONG> (Thumb, 220 bytes, Stack size 8 bytes, bsp_ili9341_lcd.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = ILI9341_GPIO_Config &rArr; GPIO_Init
 </UL>
-<BR>[Calls]<UL><LI><a href="#[68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_APB2PeriphClockCmd
-<LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_Init
+<BR>[Calls]<UL><LI><a href="#[67]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_APB2PeriphClockCmd
+<LI><a href="#[68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_Init
 </UL>
 <BR>[Called By]<UL><LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ILI9341_Init
 </UL>
@@ -1256,8 +1249,8 @@ Local Symbols
 <P><STRONG><a name="[89]"></a>XPT2046_EXTI_NVIC_Config</STRONG> (Thumb, 40 bytes, Stack size 8 bytes, bsp_xpt2046_lcd.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = XPT2046_EXTI_NVIC_Config &rArr; NVIC_Init
 </UL>
-<BR>[Calls]<UL><LI><a href="#[66]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NVIC_Init
-<LI><a href="#[65]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NVIC_PriorityGroupConfig
+<BR>[Calls]<UL><LI><a href="#[65]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NVIC_Init
+<LI><a href="#[64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NVIC_PriorityGroupConfig
 </UL>
 <BR>[Called By]<UL><LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;XPT2046_EXTI_Config
 </UL>
@@ -1265,10 +1258,10 @@ Local Symbols
 <P><STRONG><a name="[8a]"></a>XPT2046_EXTI_Config</STRONG> (Thumb, 72 bytes, Stack size 16 bytes, bsp_xpt2046_lcd.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = XPT2046_EXTI_Config &rArr; GPIO_Init
 </UL>
-<BR>[Calls]<UL><LI><a href="#[68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_APB2PeriphClockCmd
-<LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_EXTILineConfig
-<LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_Init
-<LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EXTI_Init
+<BR>[Calls]<UL><LI><a href="#[67]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_APB2PeriphClockCmd
+<LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_EXTILineConfig
+<LI><a href="#[68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_Init
+<LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EXTI_Init
 <LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;XPT2046_EXTI_NVIC_Config
 </UL>
 <BR>[Called By]<UL><LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;XPT2046_Init
@@ -1277,9 +1270,9 @@ Local Symbols
 <P><STRONG><a name="[8b]"></a>XPT2046_GPIO_SPI_Config</STRONG> (Thumb, 114 bytes, Stack size 8 bytes, bsp_xpt2046_lcd.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = XPT2046_GPIO_SPI_Config &rArr; GPIO_Init
 </UL>
-<BR>[Calls]<UL><LI><a href="#[68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_APB2PeriphClockCmd
+<BR>[Calls]<UL><LI><a href="#[67]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_APB2PeriphClockCmd
 <LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ResetBits
-<LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_Init
+<LI><a href="#[68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_Init
 </UL>
 <BR>[Called By]<UL><LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;XPT2046_Init
 </UL>

@@ -41,7 +41,7 @@
 
 
 void SPI_BGT24MTR12_Init(void);
-u16 SPI_BGT24MTR12_Write(void);
+u16 SPI_BGT24MTR12_Write(u16 count);
 u16 SPI_BGT24MTR12_SendByte(u16 byte);
 
 #endif /* __BGT24MTR12_H */

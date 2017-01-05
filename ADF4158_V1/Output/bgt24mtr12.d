@@ -2,7 +2,7 @@
 ..\..\output\bgt24mtr12.o: ..\..\User\BGT24MTR12\BGT24MTR12.h
 ..\..\output\bgt24mtr12.o: ..\..\Libraries\CMSIS\stm32f10x.h
 ..\..\output\bgt24mtr12.o: ..\..\Libraries\CMSIS\core_cm3.h
-..\..\output\bgt24mtr12.o: D:\keil\ARM\ARMCC\Bin\..\include\stdint.h
+..\..\output\bgt24mtr12.o: F:\Program Files\keil\ARM\ARMCC\Bin\..\include\stdint.h
 ..\..\output\bgt24mtr12.o: ..\..\Libraries\CMSIS\system_stm32f10x.h
 ..\..\output\bgt24mtr12.o: ..\..\User\stm32f10x_conf.h
 ..\..\output\bgt24mtr12.o: ..\..\Libraries\FWlib\inc\stm32f10x_adc.h

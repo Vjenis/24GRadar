@@ -100,7 +100,7 @@ void SPI_BGT24MTR12_Init(void)
 * Output         : None
 * Return         : 
 *******************************************************************************/
-u16 SPI_BGT24MTR12_Write(void)
+u16 SPI_BGT24MTR12_Write(u16 count)
 {
   u16 Temp = 0;
 

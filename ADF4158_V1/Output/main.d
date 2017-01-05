@@ -1,7 +1,7 @@
 ..\..\output\main.o: ..\..\User\main.c
 ..\..\output\main.o: ..\..\Libraries\CMSIS\stm32f10x.h
 ..\..\output\main.o: ..\..\Libraries\CMSIS\core_cm3.h
-..\..\output\main.o: D:\keil\ARM\ARMCC\Bin\..\include\stdint.h
+..\..\output\main.o: F:\Program Files\keil\ARM\ARMCC\Bin\..\include\stdint.h
 ..\..\output\main.o: ..\..\Libraries\CMSIS\system_stm32f10x.h
 ..\..\output\main.o: ..\..\User\stm32f10x_conf.h
 ..\..\output\main.o: ..\..\Libraries\FWlib\inc\stm32f10x_adc.h
@@ -33,6 +33,6 @@
 ..\..\output\main.o: ..\..\User\lcd\bsp_lcd.h
 ..\..\output\main.o: ..\..\User\lcd\bsp_ili9341_lcd.h
 ..\..\output\main.o: ..\..\User\lcd\bsp_xpt2046_lcd.h
-..\..\output\main.o: D:\keil\ARM\ARMCC\Bin\..\include\stdio.h
+..\..\output\main.o: F:\Program Files\keil\ARM\ARMCC\Bin\..\include\stdio.h
 ..\..\output\main.o: ..\..\User\BGT24MTR12\BGT24MTR12.h
 ..\..\output\main.o: ..\..\User\ADF4158\bsp_adf4158.h
