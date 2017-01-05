@@ -84,7 +84,7 @@ void SPI_BGT24MTR12_Init(void)
   SPI_InitStructure.SPI_CPOL = SPI_CPOL_High;
   SPI_InitStructure.SPI_CPHA = SPI_CPHA_2Edge;
   SPI_InitStructure.SPI_NSS = SPI_NSS_Soft;
-  SPI_InitStructure.SPI_BaudRatePrescaler = SPI_BaudRatePrescaler_2;
+  SPI_InitStructure.SPI_BaudRatePrescaler = SPI_BaudRatePrescaler_4;
   SPI_InitStructure.SPI_FirstBit = SPI_FirstBit_MSB;
   SPI_InitStructure.SPI_CRCPolynomial = 7;
   SPI_Init(macSPIx , &SPI_InitStructure);
@@ -107,7 +107,6 @@ u16 SPI_BGT24MTR12_Write(void)
   /* Select the FLASH: Chip Select low */
   macSPI_BGT24MTR12_CS_ENABLE();
 
-	delay (20);
 	switch(Key1Down_Count)
 	{
 		 /* Send data */
@@ -126,12 +125,11 @@ u16 SPI_BGT24MTR12_Write(void)
 	Power_Select = Output_Power_Reducion_0£»
 	#enddef*/
   
-	ReadValue = GPIO_ReadOutputDataBit(GPIOA,GPIO_Pin_7);
+//	ReadValue = GPIO_ReadOutputDataBit(GPIOA,GPIO_Pin_7);
 	
   /* Read a byte from the BGT24MTR12 */
   Temp = SPI_BGT24MTR12_SendByte(Dummy_Byte);
 	
-	delay (20);
   /* Deselect the BGT24MTR12: Chip Select high */
   macSPI_BGT24MTR12_CS_DISABLE();
 

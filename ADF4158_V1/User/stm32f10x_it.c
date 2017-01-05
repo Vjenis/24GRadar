@@ -186,7 +186,7 @@ void macEXTI1_INT_FUNCTION (void)
 		ILI9341_DispString_EN ( 0, 10, "BGT Power Select", macBACKGROUND, macRED );
 		ILI9341_Display_Num ( 150, 10, Key1Down_Count, macBACKGROUND, macRED );
 		
-		SPI_BGT24MTR12_Write();
+//		SPI_BGT24MTR12_Write();
 		
 		EXTI_ClearITPendingBit(macEXTI1_LINE);     //清除中断标志位
 	}  

@@ -16,6 +16,7 @@
 #include "BGT24MTR12.h"
 #include "bsp_adf4158.h"
 #include "bsp_lcd.h"
+//#include "bsp_clkconfig.h"
 
 extern uint8_t Key1Down_Count;
 
@@ -29,7 +30,9 @@ extern uint8_t Key1Down_Count;
   */ 
 int main(void)
 {	
-	uint8_t i;
+//	uint8_t i;
+	
+//	HSE_SetSysClock(RCC_PLLMul_9);
 	
 	LED_GPIO_Config();
 	LED1_ON;
@@ -52,13 +55,13 @@ int main(void)
 	ILI9341_DispString_EN ( 0, 10, "BGT Power Select", macBACKGROUND, macRED );
 	ILI9341_Display_Num ( 150, 10, Key1Down_Count, macBACKGROUND, macRED );
 	
-	for(i=7;i>0;i--)
-		WriteToADF4158(ADF4158Registers,i);
+//	for(i=7;i>0;i--)
+//		WriteToADF4158(ADF4158Registers,i);
 	
 	/* wait interrupt */
 	while(1)                            
 	{
-		
+		SPI_BGT24MTR12_Write();
 //		switch(Key2Down_Count)
 //		{
 //			case '0':WriteToADF4158(ADF4158Registers,0);break;
