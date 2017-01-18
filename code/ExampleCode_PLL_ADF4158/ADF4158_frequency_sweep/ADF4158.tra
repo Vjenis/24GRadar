@@ -1,0 +1,22 @@
+*** Creating Trace Output File 'ADF4158.tra' Ok.
+### Preparing for ADS-LD.
+### Creating ADS-LD Command Line
+### List of Objects: adding '"aduc702x.o"'
+### List of Objects: adding '"adf4158_io.o"'
+### List of Objects: adding '"aduc7026driver.o"'
+### List of Objects: adding '"irq_arm.o"'
+### List of Objects: adding '"main.o"'
+### ADS-LD Command completed:
+--device DARMAD "aduc702x.o" "adf4158_io.o" "aduc7026driver.o" "irq_arm.o" "main.o" --ro-base 0x00080000 --entry 0x00080000 --rw-base 0x00010000 --strict --autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\ADF4158.map" -o "ADF4158.axf"### Preparing Environment (PrepEnvAds)
+### ADS-LD Output File: 'ADF4158.axf'
+### ADS-LD Command File: 'ADF4158.lnp'
+### Checking for dirty Components...
+### Creating CmdFile 'ADF4158.lnp', Handle=0x000002B4
+### Writing '.lnp' file
+### ADS-LD Command file 'ADF4158.lnp' is ready.
+### ADS-LD: About to start ADS-LD Thread.
+### ADS-LD: executed with 0 errors
+### Updating obj list
+### LDADS_file() completed.

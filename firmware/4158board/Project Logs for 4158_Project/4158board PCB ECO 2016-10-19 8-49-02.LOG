@@ -1,0 +1,26 @@
+Removed Pin From Net: NetName=3V3 Pin=C12-1
+Removed Pin From Net: NetName=3V3 Pin=C13-1
+Removed Pin From Net: NetName=GND Pin=C14-1
+Removed Pin From Net: NetName=NetC10_1 Pin=R6-2
+Removed Pin From Net: NetName=GND Pin=U5-2
+Removed Pin From Net: NetName=GND Pin=U5-4
+Removed Pin From Net: NetName=GND Pin=U5-7
+Removed Pin From Net: NetName=GND Pin=U5-9
+Removed Pin From Net: NetName=GND Pin=U5-11
+Removed Pin From Net: NetName=GND Pin=U5-21
+Removed Pin From Net: NetName=GND Pin=U5-24
+Removed Pin From Net: NetName=GND Pin=U5-32
+Removed Member From Class: ClassName=24GSchematic Member=C12
+Removed Member From Class: ClassName=24GSchematic Member=C13
+Removed Member From Class: ClassName=24GSchematic Member=C14
+Removed Member From Class: ClassName=24GSchematic Member=R6
+Removed Member From Class: ClassName=24GSchematic Member=R7
+Removed Member From Class: ClassName=24GSchematic Member=U4
+Removed Member From Class: ClassName=24GSchematic Member=U5
+Added Pin To Net: NetName=3V3 Pin=R5-2
+Change Net Name : Old Net Name=3V3 New Net Name=3V
+Added Pin To Net: NetName=FINE Pin=U1-21
+Added Net: Name=FINE
+Added Pin To Net: NetName=Q1 Pin=U1-5
+Added Net: Name=Q1
+Added Room: Name=24GSchematic

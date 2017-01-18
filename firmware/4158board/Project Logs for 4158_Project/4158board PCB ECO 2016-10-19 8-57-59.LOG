@@ -1,0 +1,13 @@
+Change Component DesignItemId : Designator=P2 Old DesignItemId=Header 5H New DesignItemId=Header 5
+Change Component Footprint: Designator=P2 Old Footprint=HDR1X5H New Footprint=HDR1X5
+Change Component Comment : Designator=P2 Old Comment=Header 5H New Comment=Header 5
+Added Pin To Net: NetName=3V3 Pin=U5-1
+Added Pin To Net: NetName=GND Pin=U5-2
+Added Pin To Net: NetName=GND Pin=U5-4
+Added Pin To Net: NetName=GND Pin=U5-7
+Added Pin To Net: NetName=GND Pin=U5-9
+Added Pin To Net: NetName=3V3 Pin=U5-10
+Added Pin To Net: NetName=GND Pin=U5-11
+Added Pin To Net: NetName=GND Pin=U5-21
+Added Pin To Net: NetName=GND Pin=U5-24
+Added Pin To Net: NetName=GND Pin=U5-32

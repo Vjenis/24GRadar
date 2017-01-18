@@ -1,0 +1,24 @@
+Removed Pin From Net: NetName=NetU1_12 Pin=U1-12
+Removed Pin From Net: NetName=NetU1_14 Pin=U1-14
+Removed Pin From Net: NetName=NetU1_15 Pin=U1-15
+Removed Pin From Net: NetName=NetU1_16 Pin=U1-16
+Removed Pin From Net: NetName=NetU1_17 Pin=U1-17
+Removed Member From Class: ClassName=24GSchematic Member=U2
+Added Component: Designator=P1(HDR1X5)
+Added Pin To Net: NetName=NetU1_12 Pin=P1-1
+Added Pin To Net: NetName=NetU1_14 Pin=P1-2
+Added Pin To Net: NetName=NetU1_15 Pin=P1-3
+Added Pin To Net: NetName=NetU1_16 Pin=P1-4
+Added Pin To Net: NetName=NetU1_17 Pin=P1-5
+Added Pin To Net: NetName=NetU1_17 Pin=U1-12
+Added Pin To Net: NetName=NetU1_16 Pin=U1-14
+Added Pin To Net: NetName=NetU1_14 Pin=U1-15
+Added Pin To Net: NetName=NetU1_15 Pin=U1-16
+Added Pin To Net: NetName=NetU1_12 Pin=U1-17
+Change Net Name : Old Net Name=NetU1_12 New Net Name=NetP1_1
+Change Net Name : Old Net Name=NetU1_14 New Net Name=NetP1_2
+Change Net Name : Old Net Name=NetU1_15 New Net Name=NetP1_3
+Change Net Name : Old Net Name=NetU1_16 New Net Name=NetP1_4
+Change Net Name : Old Net Name=NetU1_17 New Net Name=NetP1_5
+Added Member To Class: ClassName=24GSchematic Member=Component P1 Header 5
+Added Room: Name=24GSchematic

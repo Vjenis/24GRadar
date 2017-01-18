@@ -1,0 +1,6 @@
+Removed Pin From Net: NetName=NetC10_1 Pin=R9-1
+Removed Pin From Net: NetName=NetC10_1 Pin=U1-20
+Added Pin To Net: NetName=NetR9_1 Pin=R9-1
+Added Pin To Net: NetName=NetR9_1 Pin=U1-20
+Added Net: Name=NetR9_1
+Added Room: Name=24GSchematic

@@ -1,0 +1,5 @@
+Added Pin To Net: NetName=NetP2_3 Pin=U5-20
+Added Member To Class: ClassName=24GSchematic Member=Component C12 Cap Semi
+Added Member To Class: ClassName=24GSchematic Member=Component C13 Cap Semi
+Added Member To Class: ClassName=24GSchematic Member=Component U5 BGT24MTR12
+Added Room: Name=24GSchematic

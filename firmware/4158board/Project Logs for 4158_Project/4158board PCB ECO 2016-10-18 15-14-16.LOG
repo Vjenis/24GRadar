@@ -1,0 +1,6 @@
+Removed Pin From Net: NetName=NetP1_2 Pin=U1-15
+Removed Pin From Net: NetName=NetP1_3 Pin=U1-16
+Added Pin To Net: NetName=NetP1_3 Pin=U1-15
+Added Pin To Net: NetName=NetP1_2 Pin=U1-16
+Added Member To Class: ClassName=24GSchematic Member=Component P1 Header 5
+Added Room: Name=24GSchematic
