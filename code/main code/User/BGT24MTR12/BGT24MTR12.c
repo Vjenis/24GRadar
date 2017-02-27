@@ -48,30 +48,30 @@ void SPI_BGT24MTR12_Init(void)
        SPI_FLASH_SPI_MISO_GPIO, SPI_FLASH_SPI_DETECT_GPIO 
        and SPI_FLASH_SPI_SCK_GPIO Periph clock enable */
   /*!< SPI_FLASH_SPI Periph clock enable */
-	macSPI_APBxClock_FUN ( macSPI_CLK, ENABLE );
+	macSPI1_APBxClock_FUN ( macSPI1_CLK, ENABLE );
  
   /*!< Configure SPI_FLASH_SPI_CS_PIN pin: SPI_FLASH Card CS pin */
-	macSPI_CS_APBxClock_FUN ( macSPI_CS_CLK, ENABLE );
-  GPIO_InitStructure.GPIO_Pin = macSPI_CS_PIN;
+	macSPI1_CS_APBxClock_FUN ( macSPI1_CS_CLK, ENABLE );
+  GPIO_InitStructure.GPIO_Pin = macSPI1_CS_PIN;
 	GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
   GPIO_InitStructure.GPIO_Mode = GPIO_Mode_Out_PP;
-  GPIO_Init(macSPI_CS_PORT, &GPIO_InitStructure);
+  GPIO_Init(macSPI1_CS_PORT, &GPIO_InitStructure);
 	
   /*!< Configure SPI_FLASH_SPI pins: SCK */
-	macSPI_SCK_APBxClock_FUN ( macSPI_SCK_CLK, ENABLE );
-  GPIO_InitStructure.GPIO_Pin = macSPI_SCK_PIN;
+	macSPI1_SCK_APBxClock_FUN ( macSPI1_SCK_CLK, ENABLE );
+  GPIO_InitStructure.GPIO_Pin = macSPI1_SCK_PIN;
   GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AF_PP;
-  GPIO_Init(macSPI_SCK_PORT, &GPIO_InitStructure);
+  GPIO_Init(macSPI1_SCK_PORT, &GPIO_InitStructure);
 
   /*!< Configure SPI_FLASH_SPI pins: MOSI */
-	macSPI_MOSI_APBxClock_FUN ( macSPI_MOSI_CLK, ENABLE );
-  GPIO_InitStructure.GPIO_Pin = macSPI_MOSI_PIN;
-  GPIO_Init(macSPI_MOSI_PORT, &GPIO_InitStructure);
+	macSPI1_MOSI_APBxClock_FUN ( macSPI1_MOSI_CLK, ENABLE );
+  GPIO_InitStructure.GPIO_Pin = macSPI1_MOSI_PIN;
+  GPIO_Init(macSPI1_MOSI_PORT, &GPIO_InitStructure);
 	
 	/*!< Configure SPI_FLASH_SPI pins: MISO */
-	macSPI_MISO_APBxClock_FUN ( macSPI_MISO_CLK, ENABLE );
-  GPIO_InitStructure.GPIO_Pin = macSPI_MISO_PIN;
-  GPIO_Init(macSPI_MISO_PORT, &GPIO_InitStructure);
+	macSPI1_MISO_APBxClock_FUN ( macSPI1_MISO_CLK, ENABLE );
+  GPIO_InitStructure.GPIO_Pin = macSPI1_MISO_PIN;
+  GPIO_Init(macSPI1_MISO_PORT, &GPIO_InitStructure);
 
   /* Deselect the FLASH: Chip Select high */
   macSPI_BGT24MTR12_CS_DISABLE();
@@ -88,27 +88,13 @@ void SPI_BGT24MTR12_Init(void)
   SPI_InitStructure.SPI_BaudRatePrescaler = SPI_BaudRatePrescaler_4;
   SPI_InitStructure.SPI_FirstBit = SPI_FirstBit_MSB;
   SPI_InitStructure.SPI_CRCPolynomial = 7;
-  SPI_Init(macSPIx , &SPI_InitStructure);
+  SPI_Init(macSPI1 , &SPI_InitStructure);
 
   /* Enable SPI1  */
-  SPI_Cmd(macSPIx , ENABLE);
+  SPI_Cmd(macSPI1 , ENABLE);
 	
 }
 
-u8 SPI_BGT_SendByte(u8 byte)
-{
-  /* Loop while DR register in not emplty */
-  while (SPI_I2S_GetFlagStatus(macSPIx , SPI_I2S_FLAG_TXE) == RESET);
-
-  /* Send byte through the SPI1 peripheral */
-  SPI_I2S_SendData(macSPIx , byte);
-
-  /* Wait to receive a byte */
-  while (SPI_I2S_GetFlagStatus(macSPIx , SPI_I2S_FLAG_RXNE) == RESET);
-
-  /* Return the byte read from the SPI bus */
-  return SPI_I2S_ReceiveData(macSPIx );
-}
 
 /*******************************************************************************
 * Function Name  : SPI_BGT24MTR12_Write
@@ -153,59 +139,7 @@ void SPI_BGT24MTR12_Write(u16 count)
 //  return Temp;
 }
 
-/*******************************************************************************
-* Function Name  : SPI_BGT_ByteWrite
-* Description    : Writes more than one byte to the FLASH with a single WRITE
-*                  cycle(Page WRITE sequence). The number of byte can't exceed
-*                  the FLASH page size.
-* Input          : - pBuffer : pointer to the buffer  containing the data to be
-*                    written to the FLASH.
-*                  - NumByteToWrite : number of bytes to write to the FLASH,
-*                    must be equal or less than "SPI_FLASH_PageSize" value.
-* Output         : None
-* Return         : None
-*******************************************************************************/
-void SPI_BGT_ByteWrite(u8* pBuffer, u16 ByteWrite)
-//void SPI_BGT_ByteWrite(u16 ByteWrite)
-{
-//	u8 FLASH_Status = 0;
 
-  /* Select the FLASH: Chip Select low */
-  macSPI_BGT24MTR12_CS_ENABLE();
-
-//  /* Send WriteAddr medium nibble address byte to write to */
-//  SPI_BGT_SendByte((ByteWrite & 0xFF00) >> 8);
-//  /* Send WriteAddr low nibble address byte to write to */
-//  SPI_BGT_SendByte(ByteWrite & 0xFF);
-
-//  if(NumByteToWrite > SPI_FLASH_PerWritePageSize)
-//  {
-//     NumByteToWrite = SPI_FLASH_PerWritePageSize;
-//     //printf("\n\r Err: SPI_FLASH_PageWrite too large!");
-//  }
-
-  /* while there is data to be written on the FLASH */
-  while (ByteWrite--)
-  {
-    /* Send the current byte */
-    SPI_BGT_SendByte(*pBuffer);
-    /* Point on the next byte to be written */
-    pBuffer++;
-  }
-
-  /* Wait the end of BGT writing */
-//  do
-//  {
-//    /* Send a dummy byte to generate the clock needed by the FLASH
-//    and put the value of the status register in FLASH_Status variable */
-//    FLASH_Status = SPI_BGT_SendByte(Dummy_Byte);	 
-//  }
-//  while ((FLASH_Status & WIP_Flag) == SET); /* Write in progress */
-	
-  /* Deselect the FLASH: Chip Select high */
-  macSPI_BGT24MTR12_CS_DISABLE();
-	
-}
 
 
 /*******************************************************************************
@@ -219,16 +153,16 @@ void SPI_BGT_ByteWrite(u8* pBuffer, u16 ByteWrite)
 u16 SPI_BGT24MTR12_SendByte(u16 byte)
 {
   /* Loop while DR register in not emplty */
-  while (SPI_I2S_GetFlagStatus(macSPIx , SPI_I2S_FLAG_TXE) == RESET);
+  while (SPI_I2S_GetFlagStatus(macSPI1 , SPI_I2S_FLAG_TXE) == RESET);
 
   /* Send byte through the SPI1 peripheral */
-  SPI_I2S_SendData(macSPIx , byte);
+  SPI_I2S_SendData(macSPI1 , byte);
 
   /* Wait to receive a byte */
-  while (SPI_I2S_GetFlagStatus(macSPIx , SPI_I2S_FLAG_RXNE) == RESET);
+  while (SPI_I2S_GetFlagStatus(macSPI1 , SPI_I2S_FLAG_RXNE) == RESET);
 
   /* Return the byte read from the SPI bus */
-  return SPI_I2S_ReceiveData(macSPIx );
+  return SPI_I2S_ReceiveData(macSPI1 );
 }
 
 

@@ -37,7 +37,6 @@
 //#define FLASH_SAVE_ADDR  0X08070000		              //设置FLASH 保存地址(必须为偶数，且其值要大于本代码所占用FLASH的大小+0X08000000)
 //uint8_t TEMP_Buffer[]="";  												//要写入到STM32 FLASH的字符串数组
 uint8_t Key1Down_Count = '8';
-uint8_t Key2Down_Count = '0';
 //#define SIZE sizeof(TEMP_Buffer)		                //数组长度
 
 /** @addtogroup STM32F10x_StdPeriph_Template
@@ -181,7 +180,7 @@ void macEXTI1_INT_FUNCTION (void)
 		else
 			Key1Down_Count++;
 
-		ILI9341_Display_Num ( 150, 10, Key1Down_Count, macBACKGROUND, macRED );
+		ILI9341_Display_Num ( 180, 10, Key1Down_Count, macBACKGROUND, macRED );
 		
 		EXTI_ClearITPendingBit(macEXTI1_LINE);     //清除中断标志位
 	}  
@@ -196,32 +195,6 @@ void macEXTI2_INT_FUNCTION (void)
 	{
 		// LED2 取反
 		LED2_TOGGLE;
-		
-		if(Key2Down_Count >= '7')
-		{
-			Key2Down_Count = '0' ;
-		}
-		else
-		{
-			Key2Down_Count++;
-		}
-		//switch(Key1Down_Count)
-			//{
-			//	case '0':strcpy(TEMP_Buffer, "0");break;
-			//	case '1':strcpy(TEMP_Buffer, "1");break;
-			//	case '2':strcpy(TEMP_Buffer, "2");break;
-			//	case '3':strcpy(TEMP_Buffer, "3");break;
-			//	case '4':strcpy(TEMP_Buffer, "4");break;
-			//	case '5':strcpy(TEMP_Buffer, "5");break;
-			//	case '6':strcpy(TEMP_Buffer, "6");break;
-			//	case '7':strcpy(TEMP_Buffer, "7");break;
-			//	default:strcpy(TEMP_Buffer, "0");
-			//	break;
-			//}
-//		//STMFLASH_Read ( FLASH_SAVE_ADDR, ( uint16_t * ) datatemp, SIZE );
-		
-		ILI9341_DispString_EN ( 0, 30, "ADF4158 Select", macBACKGROUND, macRED );
-		ILI9341_Display_Num ( 150, 30, Key2Down_Count, macBACKGROUND, macRED );
 		
 		EXTI_ClearITPendingBit(macEXTI2_LINE);     //清除中断标志位
 	}  
