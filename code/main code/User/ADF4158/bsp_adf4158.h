@@ -25,41 +25,8 @@
 					else		\
 					GPIO_ResetBits(macADF4158_TXDATA_PORT,macADF4158_TXDATA_PIN)
 
-#define MUXOUT(a)	if (a)	\
-					GPIO_SetBits(macADF4158_MUXOUT_PORT,macADF4158_MUXOUT_PIN);\
-					else		\
-					GPIO_ResetBits(macADF4158_MUXOUT_PORT,macADF4158_MUXOUT_PIN)
+#define MUXOUT()	GPIO_ReadInputDataBit(macADF4158_MUXOUT_PORT, macADF4158_MUXOUT_PIN);					
 					
-/************************** SPI BGT24MTR12 连接引脚定义********************************/
-#define      macSPI2                                     	SPI2
-#define      macSPI2_APBxClock_FUN                        RCC_APB1PeriphClockCmd
-#define      macSPI2_CLK                                  RCC_APB1Periph_SPI2
-
-#define      macSPI2_CS_APBxClock_FUN                     RCC_APB1PeriphClockCmd
-#define      macSPI2_CS_CLK                               RCC_APB2Periph_GPIOB   
-#define      macSPI2_CS_PORT                              GPIOB
-#define      macSPI2_CS_PIN                               GPIO_Pin_12
-
-#define      macSPI2_SCK_APBxClock_FUN                    RCC_APB1PeriphClockCmd
-#define      macSPI2_SCK_CLK                              RCC_APB2Periph_GPIOB   
-#define      macSPI2_SCK_PORT                             GPIOB   
-#define      macSPI2_SCK_PIN                              GPIO_Pin_13
-
-#define      macSPI2_MISO_APBxClock_FUN                   RCC_APB1PeriphClockCmd
-#define      macSPI2_MISO_CLK                             RCC_APB2Periph_GPIOB   
-#define      macSPI2_MISO_PORT                            GPIOB 
-#define      macSPI2_MISO_PIN                             GPIO_Pin_14
-
-#define      macSPI2_MOSI_APBxClock_FUN                   RCC_APB1PeriphClockCmd
-#define      macSPI2_MOSI_CLK                             RCC_APB2Periph_GPIOB    
-#define      macSPI2_MOSI_PORT                            GPIOB 
-#define      macSPI2_MOSI_PIN                             GPIO_Pin_15
-
-
-
-/************************** SPI Flash 函数宏定义********************************/
-#define      macSPI_ADF4158_CS_ENABLE()                       GPIO_ResetBits( macSPI2_CS_PORT, macSPI2_CS_PIN )
-#define      macSPI_ADF4158_CS_DISABLE()                      GPIO_SetBits( macSPI2_CS_PORT, macSPI2_CS_PIN )
 
 
 /**************************	ADF4158参数定义 ********************************/
@@ -231,24 +198,13 @@ extern uint16_t ADF4158Read_2[8];
 extern uint16_t ADF4158Read_3[8];
 
 void WriteToADF4158(u32* pBuffer , u16 Adress);
-void ReadToADF4158_16bit(u16* pBuffer , u16 Adress);
+unsigned long int ReadToADF4158_16bit(void);
 void ReadToADF4158_21bit(u32* pBuffer , u16 Adress);
 
 void config(void);
 void delay (int length);
 
-u16 SPI_FLASH_ReadByte(void);
-void SPI_ADF4158_SendByte(u16 byte);
-
-void SPI_adf4158_ByteWrite(u32* pBuffer, u16 count);
-//void SPI_adf4158_ByteWrite(u8* pBuffer, u32 ByteWrite);
-//void SPI_ADF4158_ByteWrite(u32 ByteWrite);
-
-void SPI_adf4158_ByteRead16bit(u16* pBuffer, u16 count);
-void SPI_adf4158_ByteRead21bit(u32* pBuffer, u16 count);
-
 void ADF4158_GPIO_Config(void);
-void ADF4158_Init(void);
 
 
 #endif /* __ADF4158_H */

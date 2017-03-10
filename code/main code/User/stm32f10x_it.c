@@ -29,12 +29,12 @@
 #include "bsp_exti.h"
 #include "bsp_lcd.h"
 #include <stdio.h>
-#include "stm_flash.h"
 #include "string.h"
 #include "BGT24MTR12.h"
 #include "bsp_adf4158.h"
 
-//#define FLASH_SAVE_ADDR  0X08070000		              //设置FLASH 保存地址(必须为偶数，且其值要大于本代码所占用FLASH的大小+0X08000000)
+extern void TimingDelay_Decrement(void);
+
 //uint8_t TEMP_Buffer[]="";  												//要写入到STM32 FLASH的字符串数组
 uint8_t Key1Down_Count = '8';
 //#define SIZE sizeof(TEMP_Buffer)		                //数组长度
@@ -149,6 +149,7 @@ void PendSV_Handler(void)
   */
 void SysTick_Handler(void)
 {
+	TimingDelay_Decrement();
 }
 
 // EXTI Line --> PE4

@@ -332,7 +332,7 @@
               <MiscControls></MiscControls>
               <Define>STM32F10X_HD, USE_STDPERIPH_DRIVER</Define>
               <Undefine></Undefine>
-              <IncludePath>..\..\Libraries\CMSIS;..\..\User;..\..\Libraries\FWlib\inc;..\..\User\Led;..\..\User\Key;..\..\User\lcd;..\..\User\SysTick;..\..\User\BGT24MTR12;..\..\User\StmFlash;..\..\User\ADF4158;..\..\User\bsp_clk;..\..\User\usart</IncludePath>
+              <IncludePath>..\..\Libraries\CMSIS;..\..\User;..\..\Libraries\FWlib\inc;..\..\User\Led;..\..\User\Key;..\..\User\lcd;..\..\User\SysTick;..\..\User\BGT24MTR12;..\..\User\StmFlash;..\..\User\ADF4158;..\..\User\bsp_clk;..\..\User\usart;..\..\User\TimBase</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -621,16 +621,6 @@
               <FilePath>..\..\User\BGT24MTR12\BGT24MTR12.c</FilePath>
             </File>
             <File>
-              <FileName>stm_flash.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\..\User\StmFlash\stm_flash.h</FilePath>
-            </File>
-            <File>
-              <FileName>stm_flash.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\User\StmFlash\stm_flash.c</FilePath>
-            </File>
-            <File>
               <FileName>bsp_adf4158.h</FileName>
               <FileType>5</FileType>
               <FilePath>..\..\User\ADF4158\bsp_adf4158.h</FilePath>
@@ -639,26 +629,6 @@
               <FileName>bsp_adf4158.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\..\User\ADF4158\bsp_adf4158.c</FilePath>
-            </File>
-            <File>
-              <FileName>bsp_clkconfig.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\..\User\bsp_clk\bsp_clkconfig.h</FilePath>
-            </File>
-            <File>
-              <FileName>bsp_clkconfig.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\User\bsp_clk\bsp_clkconfig.c</FilePath>
-            </File>
-            <File>
-              <FileName>bsp_usart1.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\..\User\usart\bsp_usart1.h</FilePath>
-            </File>
-            <File>
-              <FileName>bsp_usart1.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\User\usart\bsp_usart1.c</FilePath>
             </File>
           </Files>
         </Group>

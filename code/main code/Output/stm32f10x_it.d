@@ -35,7 +35,6 @@
 ..\..\output\stm32f10x_it.o: ..\..\User\lcd\bsp_ili9341_lcd.h
 ..\..\output\stm32f10x_it.o: ..\..\User\lcd\bsp_xpt2046_lcd.h
 ..\..\output\stm32f10x_it.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
-..\..\output\stm32f10x_it.o: ..\..\User\StmFlash\stm_flash.h
 ..\..\output\stm32f10x_it.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
 ..\..\output\stm32f10x_it.o: ..\..\User\BGT24MTR12\BGT24MTR12.h
 ..\..\output\stm32f10x_it.o: ..\..\User\ADF4158\bsp_adf4158.h

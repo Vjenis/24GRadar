@@ -36,4 +36,3 @@
 ..\..\output\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
 ..\..\output\main.o: ..\..\User\BGT24MTR12\BGT24MTR12.h
 ..\..\output\main.o: ..\..\User\ADF4158\bsp_adf4158.h
-..\..\output\main.o: ..\..\User\usart\bsp_usart1.h

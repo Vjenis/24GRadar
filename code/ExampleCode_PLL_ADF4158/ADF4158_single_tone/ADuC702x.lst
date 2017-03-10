@@ -638,9 +638,9 @@ e)
               00000400 
               00000000 
 Command Line: --debug --xref --diag_suppress=9931 --apcs=interwork --depend=.\a
-duc702x.d -o.\aduc702x.o -I"F:\Program Files\keil\ARM\RV31\INC" -I"F:\Program F
-iles\keil\ARM\CMSIS\Include" -I"F:\Program Files\keil\ARM\Inc\ADI" --predefine=
-"__UVISION_VERSION SETA 518" --list=.\aduc702x.lst ADuC702x.s
+duc702x.d -o.\aduc702x.o -IC:\Keil_v5\ARM\RV31\INC -IC:\Keil_v5\ARM\CMSIS\Inclu
+de -IC:\Keil_v5\ARM\Inc\ADI --predefine="__UVISION_VERSION SETA 518" --list=.\a
+duc702x.lst ADuC702x.s
 
 
 

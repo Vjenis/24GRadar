@@ -29,3 +29,4 @@
 ..\..\output\bsp_adf4158.o: ..\..\Libraries\FWlib\inc\stm32f10x_usart.h
 ..\..\output\bsp_adf4158.o: ..\..\Libraries\FWlib\inc\stm32f10x_wwdg.h
 ..\..\output\bsp_adf4158.o: ..\..\Libraries\FWlib\inc\misc.h
+..\..\output\bsp_adf4158.o: ..\..\User\SysTick\bsp_SysTick.h

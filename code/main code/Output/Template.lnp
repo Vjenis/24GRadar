@@ -34,10 +34,7 @@
 "..\..\output\bsp_xpt2046_lcd.o"
 "..\..\output\bsp_systick.o"
 "..\..\output\bgt24mtr12.o"
-"..\..\output\stm_flash.o"
 "..\..\output\bsp_adf4158.o"
-"..\..\output\bsp_clkconfig.o"
-"..\..\output\bsp_usart1.o"
 --library_type=microlib --strict --scatter "..\..\Output\Template.sct"
 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers
